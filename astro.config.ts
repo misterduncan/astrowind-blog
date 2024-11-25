@@ -23,6 +23,10 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 
 export default defineConfig({
   output: 'static',
+  server: {
+    host: process.env.NODE_ENV === 'development',
+    port: process.env.NODE_ENV === 'development' ? 4321 : undefined,
+  },
 
   integrations: [
     tailwind({

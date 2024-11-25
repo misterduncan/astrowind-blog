@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: CommSpot
+  site: 'https://commspot.org'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
+    default: CommSpot
     template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "\U0001F680 CommSpot is a community-driven platform for sharing, discovering and caring for community locations"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: CommSpot
     images:
       - url: '~/assets/images/default.png'
         width: 1200
