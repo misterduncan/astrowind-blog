@@ -12,6 +12,11 @@ export default {
         accent: 'var(--aw-color-accent)',
         default: 'var(--aw-color-text-default)',
         muted: 'var(--aw-color-text-muted)',
+        commspot_paler: '#def9c482',
+        commspot_pale: '#DEF9C4',
+        commspot_light: '#9CDBA6',
+        commspot_medium: '#50B948',
+        commspot_dark: '#468585'
       },
       fontFamily: {
         sans: ['var(--aw-font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],

@@ -10,12 +10,8 @@ export const headerData = {
           href: getPermalink('/about'),
         },
         {
-          text: 'Features (Anchor Link)',
+          text: 'Features',
           href: getPermalink('/#features'),
-        },
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
         },
         {
           text: 'Contact',

@@ -27,11 +27,11 @@ const metadata = {
       },
       { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'CommSpot Hero Image' }}
+    image={{ src: '~/assets/images/commspot-screen1.png', alt: 'CommSpot Hero Image' }}
   >
     <Fragment slot="title">
-      Helping local communities care for their own community 
-      <span class="text-accent dark:text-white highlight">spots</span>
+      Helping local communities care for their own <span class="text-commspot_medium dark:text-white highlight">comm</span>unity 
+      <span class="text-commspot_medium dark:text-white highlight">spots</span>
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -45,103 +45,65 @@ const metadata = {
 
   <Content
     isReversed
-    title="Why CommSpot?"
+    title="Who is this for?"
     items={[
       {
-        title: 'Built on top of Astro 4.0',
+        title: 'Local community groups',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Logging and tracking locations and maintenance of community spots, such as trees, litter and road issues.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Environmental organizations',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Monitoring and tracking the health of the environment, such as water quality, tree health and wildlife sightings.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Local authorities',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Getting public feedback on issues such as potholes, litter and road issues, and tracking the progress of maintenance.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      src: '~/assets/images/commspot-square-screenshot.jpg',
+      alt: 'Commspot screenshot',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Making mapping simple</h3>
+      Easy for everyone to learn and use making it simple to log and track issues in your community.
     </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isAfterContent
-    items={[
-      {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
-      },
-      {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
-      },
-      {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
-    }}
-  >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
 
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Start logging and tracking your community spots in 3 simple steps"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Sign up</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+          "Get started by creating an account. It's quick and easy. Just a few clicks and you're in.",
+        icon: 'tabler:hand-click',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Step 2: <span class="font-medium">Create or find projects</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          "Start a new project or join an existing one. You can also invite others to collaborate with you.",
+        icon: 'tabler:map-search',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Add locations</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          'Add locations to your project and start logging and tracking issues.',
+        icon: 'tabler:flag',
       },
       {
         title: 'Ready!',
-        icon: 'tabler:check',
+        icon: 'tabler:rocket',
       },
     ]}
     image={{
@@ -153,50 +115,46 @@ const metadata = {
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
+    title="Find out more in our Blog"
+    information={`Read the latest posts from our blog to learn more about how CommSpot can help you and your community.`}
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-    tagline="FAQs"
+    subtitle="Here are some of the most common questions we get asked"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'Why did you make CommSpot?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "We were working on local environmental projects with tree planting, litter picking and invasive species removal and found it difficult to keep track of the locations and maintenance of these projects. We wanted to create a tool that would make it easy for everyone to log and track the maintenance of community spots. Nothing out there was simple enough for everyone to use or powerful enough to collect the data we wanted, so we made CommSpot.",
+      },
+      {
+        title: 'How much does it cost?',
+        description:
+          "We want to keep this free for the communities that need it most. As the number of users grow, we may introduce a paid plan for organizations that need more features, but in the mean time, please consider donating to help us keep this service free.",
       },
       {
         title: 'What do I need to start?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'All you need is an internet connection, a device and an idea.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: "How secure is my data?",
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          "Public projects are visible to all, but only you and your team can update it. Private projects are only visible to you and your team. We take security seriously and use the latest security practices to keep your data safe.",
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'Can I get my data out?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          "Yes! Tell us what you need and we'll help you get your data out, the way you need it.",
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'I have an idea?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          "We'd love to hear it. Please get in touch and let us know how we can help.",
       },
     ]}
   />
