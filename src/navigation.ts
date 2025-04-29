@@ -71,30 +71,30 @@ export const headerData = {
 
 export const footerData = {
   links: [
-    {
-      title: 'About',
-      links: [
-        { text: 'Features', href: '#' },
-        { text: 'User stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
-      ],
-    },
-    {
-      title: 'Docs',
-      links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-      ],
-    },
-    {
-      title: 'Support',
-      links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-      ],
-    },
+    // {
+    //   title: 'About',
+    //   links: [
+    //     { text: 'Features', href: '#' },
+    //     { text: 'User stories', href: '#' },
+    //     { text: 'Pricing', href: '#' },
+    //     { text: 'Resources', href: '#' },
+    //   ],
+    // },
+    // {
+    //   title: 'Docs',
+    //   links: [
+    //     { text: 'Developer API', href: '#' },
+    //     { text: 'Partners', href: '#' },
+    //   ],
+    // },
+    // {
+    //   title: 'Support',
+    //   links: [
+    //     { text: 'Docs', href: '#' },
+    //     { text: 'Community Forum', href: '#' },
+    //     { text: 'Professional Services', href: '#' },
+    //   ],
+    // },
   ],
   secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },
@@ -102,8 +102,8 @@ export const footerData = {
   ],
   socialLinks: [
     { ariaLabel: 'Bluesky', icon: 'tabler:brand-bluesky', href: 'https://bsky.app/profile/misterduncan.bsky.social' },
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://x.com/misterduncan' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
+    // { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://x.com/misterduncan' },
+    // { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/misterduncan/commspot' },
   ],
 };
