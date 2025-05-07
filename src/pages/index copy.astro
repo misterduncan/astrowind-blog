@@ -1,0 +1,173 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+
+const metadata = {
+  title: 'CommSpot - helping local communities care for their own community spots',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Try it out',
+        href: 'https://app.commspot.org',
+        target: '_blank',
+        icon: 'tabler:rocket',
+      },
+      { text: 'Learn more', href: '#features' },
+    ]}
+    image={{ src: '~/assets/images/commspot-screen1.png', alt: 'CommSpot Hero Image' }}
+  >
+    <Fragment slot="title">
+      Helping local communities care for their own <span class="text-commspot_medium dark:text-white highlight">comm</span>unity 
+      <span class="text-commspot_medium dark:text-white highlight">spots</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold">CommSpot</span> is a free, easy to use mapping tool to help communities and small 
+        organizations log and track the maintenance of their community spots.
+    </Fragment>
+  </Hero>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    title="Who is this for?"
+    items={[
+      {
+        title: 'Local community groups',
+        description:
+          'Logging and tracking locations and maintenance of community spots, such as trees, litter and road issues.',
+      },
+      {
+        title: 'Environmental organizations',
+        description:
+          'Monitoring and tracking the health of the environment, such as water quality, tree health and wildlife sightings.',
+      },
+      {
+        title: 'Local authorities',
+        description:
+          'Getting public feedback on issues such as potholes, litter and road issues, and tracking the progress of maintenance.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/commspot-square-screenshot.jpg',
+      alt: 'Commspot screenshot',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Making mapping simple</h3>
+      Easy for everyone to learn and use making it simple to log and track issues in your community.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <!-- <Steps
+    title="Start logging and tracking your community spots in 3 simple steps"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Sign up</span>',
+        description:
+          "Get started by creating an account. It's quick and easy. Just a few clicks and you're in.",
+        icon: 'tabler:hand-click',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Create or find projects</span>',
+        description:
+          "Start a new project or join an existing one. You can also invite others to collaborate with you.",
+        icon: 'tabler:map-search',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Add locations</span>',
+        description:
+          'Add locations to your project and start logging and tracking issues.',
+        icon: 'tabler:flag',
+      },
+      {
+        title: 'Ready!',
+        icon: 'tabler:rocket',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Steps image',
+    }}
+  /> -->
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <!-- <BlogLatestPosts
+    title="Find out more in our Blog"
+    information={`Read the latest posts from our blog to learn more about how CommSpot can help you and your community.`}
+  /> -->
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Frequently Asked Questions"
+    subtitle="Here are some of the most common questions we get asked"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: 'Why did you make CommSpot?',
+        description:
+          "We were working on local environmental projects with tree planting, litter picking and invasive species removal and found it difficult to keep track of the locations and maintenance of these projects. We wanted to create a tool that would make it easy for everyone to log and track the maintenance of community spots. Nothing out there was simple enough for everyone to use or powerful enough to collect the data we wanted, so we made CommSpot.",
+      },
+      {
+        title: 'How much does it cost?',
+        description:
+          "We want to keep this free for the communities that need it most. As the number of users grow, we may introduce a paid plan for organizations that need more features, but in the mean time, please consider donating to help us keep this service free.",
+      },
+      {
+        title: 'What do I need to start?',
+        description:
+          'All you need is an internet connection, a device and an idea.',
+      },
+      {
+        title: "How secure is my data?",
+        description:
+          "Public projects are visible to all, but only you and your team can update it. Private projects are only visible to you and your team. We take security seriously and use the latest security practices to keep your data safe.",
+      },
+      {
+        title: 'Can I get my data out?',
+        description:
+          "Yes! Tell us what you need and we'll help you get your data out, the way you need it.",
+      },
+      {
+        title: 'I have an idea?',
+        description:
+          "We'd love to hear it. Please get in touch and let us know how we can help.",
+      },
+    ]}
+  />
+
+  <!-- Stats Widget ****************** -->
+
+  <!-- <Stats
+    stats={[
+      { title: 'Downloads', amount: '132K' },
+      { title: 'Stars', amount: '24.8K' },
+      { title: 'Forks', amount: '10.3K' },
+      { title: 'Users', amount: '48.4K' },
+    ]}
+  /> -->
+
+</Layout>
